@@ -11,7 +11,7 @@
     "test": "cross-env BABEL_ENV='test' jest --coverage",
     "dev": "better-npm-run dev",
     "build": "better-npm-run build",
-    "libs": "npm run build signature && npm run build helpers && npm run build http",
+    "libs": "npm run build helpers && npm run build http",
     "release": "sh ./build/release.sh"
   },
   "betterScripts": {
