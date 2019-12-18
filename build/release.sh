@@ -16,8 +16,8 @@ then
   npm run libs
 
   # commit
-  # git add -A
-  # git commit -m "docs: $VERSION"
+  git add -A
+  git commit -m "docs: $VERSION"
   npm version $VERSION --message " $VERSION"
 
   # publish
