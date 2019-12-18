@@ -298,9 +298,9 @@ class HTTP {
      * 取消所有请求（message 参数是可选的）
      * @param {String} [message] 做为请求失败时的返回信息
      */
-    cancel() {
+    cancel(message) {
         this.log('取消队列', this._queue.list.length);
-        this._queue.cancel(null, 'cancel');
+        this._queue.cancel(null, message || 'cancel');
     }
 
     /**
